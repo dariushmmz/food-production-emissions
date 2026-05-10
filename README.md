@@ -240,12 +240,14 @@ Despite low production volume, "Other" category (Coffee, Chocolate, Wine) shows 
 - Add land-use change estimation
 
 
+---
+
+
 ## 📧 Contact
 
 **Author:** Dariush Mohmmadzadeh
 - GitHub: [@yourusername](https://github.com/dariushmmz)
 
----
 
 ## ⭐ Star This Project
 
