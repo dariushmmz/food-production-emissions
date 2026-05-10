@@ -17,16 +17,16 @@ The final Random Forest regression model achieved:
 
 The analysis reveals that nearly half of global food-production emissions originate from only five countries.
 
-1 Brazil 19,440 16.4% ████████████████████████████████
-2 India 15,445 13.0% ██████████████████████████████
-3 China 10,219 8.6% ████████████████████
-4 United States 6,070 5.1% ███████████
-5 Indonesia 3,715 3.1% ██████
-6 Pakistan 2,784 2.3% █████
-7 Thailand 2,585 2.2% █████
-8 Mexico 1,768 1.5% ███
-9 Australia 1,319 1.1% ██
-10 France 1,269 1.1% ██
+1 Brazil 19,440 16.4% ████████████████████████████████</br>
+2 India 15,445 13.0% ██████████████████████████████</br>
+3 China 10,219 8.6% ████████████████████</br>
+4 United States 6,070 5.1% ███████████</br>
+5 Indonesia 3,715 3.1% ██████</br>
+6 Pakistan 2,784 2.3% █████</br>
+7 Thailand 2,585 2.2% █████</br>
+8 Mexico 1,768 1.5% ███</br>
+9 Australia 1,319 1.1% ██</br>
+10 France 1,269 1.1% ██</br>
 
 
 </br>
