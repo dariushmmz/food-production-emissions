@@ -1,7 +1,7 @@
 # Environmental Impact of Food Production
 ## A Spatial Data Science Analysis of Global Food Emissions
 
-![Global Food Emissions Map](reports/figures/global_map.png)
+![Global Food Emissions Map](outputs/figures/global_map.png)
 
 
 ## Overview
