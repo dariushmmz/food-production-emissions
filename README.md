@@ -1,4 +1,30 @@
-# 🌍 Global Food Production Emissions: A Spatial Data Science Analysis
+# Environmental Impact of Food Production
+## A Spatial Data Science Analysis of Global Food Emissions
+
+![Global Food Emissions Map](reports/figures/global_map.png)
+
+
+## Overview
+
+This project analyzes global food production emissions using spatial data science and machine learning techniques.
+
+By integrating FAOSTAT production data (1961–2022) with environmental footprint datasets, this study identifies geographic emission hotspots, product-level environmental impacts, and country-level emission patterns.
+
+The final Random Forest regression model achieved:
+
+- R² Score: 99.93%
+- Mean Absolute Percentage Error (MAPE): 4.02%
+
+The analysis reveals that nearly half of global food-production emissions originate from only five countries.
+
+
+
+</br>
+
+</br></br></br>
+
+
+
 
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
