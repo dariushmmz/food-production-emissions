@@ -248,7 +248,6 @@ Run notebooks in order:
 ## 💡 Key Spatial Insights
 
 ### Insight 1: Extreme Geographic Concentration
-</br>
 
 ```
 Top 1 Country (Brazil):     ████████████████ 16.4%
@@ -257,15 +256,19 @@ Top 10 Countries:           █████████████████�
 Remaining 190+ Countries:   ████████████████████████████ 37.0%
 ```
 
-### Insight 2: South America's Outlier Status
 </br>
+
+
+### Insight 2: South America's Outlier Status
 
 | Metric | South America | Global Average | Ratio |
 |--------|---------------|----------------|-------|
 | Mean emissions/country | 2,256 Mt | 1,117 Mt | **2.02x** |
 
-### Insight 3: The "Other Products" Paradox
 </br>
+
+
+### Insight 3: The "Other Products" Paradox
 
 Despite low production volume, "Other" category (Coffee, Chocolate, Wine) shows **93.4% feature importance** due to:
 
@@ -273,8 +276,9 @@ Despite low production volume, "Other" category (Coffee, Chocolate, Wine) shows 
 - **Coffee:** 16.5 kg CO₂eq/kg
 - **Wine:** 1.4 kg CO₂eq/kg (64% from packaging + transport)
 
-### Insight 4: Temporal Trend
 </br>
+
+### Insight 4: Temporal Trend
 
 - **Growth:** 3.6x increase (1961-2022)
 - **Peak:** 2022 (still increasing, no plateau)
