@@ -39,7 +39,8 @@ The analysis reveals that nearly half of global food-production emissions origin
 - What spatial patterns exist across continents?
 
 
-## Datasets
+
+# Datasets
 
 ### FAOSTAT
 - Global food production statistics
@@ -67,6 +68,8 @@ graph LR
 
     
 
+</br>
+
 ## Tech Stack
 
 - Python
@@ -80,7 +83,7 @@ graph LR
 - Folium
 - Jupyter Notebook
 
-
+</br>
 ## Project Workflow
 
 1. Data Collection
@@ -92,7 +95,7 @@ graph LR
 7. Model Evaluation
 8. Policy Insight Extraction
 
-
+</br>
 ### Feature Engineering
 
 Created 13 production categories from 48 original food products:
@@ -118,6 +121,7 @@ Transformations:
 Train/Test Split: 80/20 (11,236 / 2,809 rows)
 ```
 
+</br>
 
 ## Repository Structure
 ```
@@ -195,7 +199,7 @@ Run notebooks in order:
 ```
 
 
-
+</br>
 ---
 
 ## 📊 Key Results
@@ -239,7 +243,7 @@ Run notebooks in order:
 ---
 
 
-
+</br>
 
 ## 💡 Key Spatial Insights
 
@@ -286,7 +290,7 @@ Despite low production volume, "Other" category (Coffee, Chocolate, Wine) shows 
 
 
 ---
-
+</br>
 
 ## 📧 Contact
 
