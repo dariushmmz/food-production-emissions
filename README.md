@@ -120,6 +120,7 @@ Train/Test Split: 80/20 (11,236 / 2,809 rows)
 
 
 ## Repository Structure
+```
 food-emissions-spatial-analysis/
 │
 ├── README.md                          # Main entry point (MOST IMPORTANT)
@@ -166,7 +167,7 @@ food-emissions-spatial-analysis/
 └── interactive/                       # Optional: Interactive dashboard
     ├── app.py                         # Streamlit app
     └── requirements_dashboard.txt
-    
+```
 
 ## Installation
 
