@@ -29,58 +29,223 @@ The analysis reveals that nearly half of global food-production emissions origin
 10. France 1,269 1.1% ██</br>
 
 
-</br>
+## Research Questions
 
-</br></br></br>
+- What are the environmental impacts of food production?
+- Which countries generate the highest food-production emissions?
+- Can emissions be predicted from agricultural production patterns?
+- Which products contribute most to global emissions?
+- What spatial patterns exist across continents?
 
 
+## Datasets
+
+### FAOSTAT
+- Global food production statistics
+- Years: 1961–2022
+
+### Environmental Footprint Dataset
+Includes:
+- Greenhouse gas emissions
+- Water usage
+- Land use
+- Transport impacts
+
+### Spatial Data
+- Country geometries
+- Continental boundaries
+- Geographic coordinates
 
 
-[![Python 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Spatial Data Science](https://img.shields.io/badge/Spatial-Data_Science-green.svg)](https://github.com/)
-[![Regression R²=0.999](https://img.shields.io/badge/Regression-R²_0.999-brightgreen.svg)]()
+graph LR
+    A[FAOSTAT Production] --> C[Data Integration]
+    B[Environmental Footprints] --> C
+    C --> D[14,045 Country-Year Records]
+    D --> E[Spatial Regression Model]
+    E --> F[Predictions + Spatial Insights]
 
-> **Predicting and mapping environmental impacts of global food production using spatial regression analysis**
+    
 
-## 📋 Executive Summary
+## Tech Stack
 
-This project integrates **FAOSTAT agricultural production data** (1961-2022, 200+ countries) with **product-level environmental footprints** to answer critical questions about food system emissions.
+- Python
+- Pandas
+- GeoPandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+- Plotly
+- Folium
+- Jupyter Notebook
 
-### Key Achievements
 
-| Metric | Result |
-|--------|--------|
-| **Variance Explained** | 99.93% (R² = 0.9993) |
-| **Prediction Accuracy** | 4.02% MAPE |
-| **Data Coverage** | 14,045 country-years, 1961-2022 |
-| **Top 5 Countries Share** | 47.7% of global emissions |
+## Project Workflow
 
-### 🎯 Key Finding
+1. Data Collection
+2. Data Cleaning
+3. Exploratory Data Analysis (EDA)
+4. Spatial Feature Engineering
+5. Geospatial Visualization
+6. Machine Learning Modeling
+7. Model Evaluation
+8. Policy Insight Extraction
 
-> **Food production emissions are hyper-concentrated in Asia and South America, driven by a small number of high-intensity products (coffee, chocolate, beef), with just 5 countries accounting for nearly half of global emissions.**
+
+### Feature Engineering
+
+Created 13 production categories from 48 original food products:
+
+| Category | Products Included |
+|----------|-------------------|
+| Meat (High Impact) | Beef (beef herd), Beef (dairy herd), Lamb |
+| Meat (Medium Impact) | Pig Meat, Poultry Meat |
+| Other | Coffee, Dark Chocolate, Wine, Soy products |
+
+### Model Specifications
+
+```python
+Model: RandomForestRegressor
+Parameters:
+  - n_estimators: 100
+  - random_state: 42
+  
+Transformations:
+  - Target: log1p (handles 8-order magnitude range)
+  - Features: StandardScaler
+  
+Train/Test Split: 80/20 (11,236 / 2,809 rows)
+```
+
+
+## Repository Structure
+
+
+## Installation
+
+```bash
+git clone https://github.com/yourusername/global-food-emissions-spatial-analysis.git
+
+cd global-food-emissions-spatial-analysis
+
+pip install -r requirements.txt
+```
+
 
 ---
 
-## 📊 Visual Highlights
+# 14. How to Run
 
-| Top 10 Emitting Countries | Global Emissions Heatmap |
-|:-------------------------:|:------------------------:|
-| ![Top 10](outputs/figures/top_10_countries.png) | ![Spatial Map](outputs/figures/spatial_emissions_map.png) |
+```markdown
+## How to Run
 
-| Emissions Trend (1961-2022) | Feature Importance |
-|:---------------------------:|:------------------:|
-| ![Trend](outputs/figures/emissions_trend.png) | ![Features](outputs/figures/feature_importance.png) |
+Run notebooks in order:
 
----
+1. Data Collection
+2. Cleaning
+3. EDA
+4. Spatial Analysis
+5. Modeling
+```
 
-## 🔍 Research Questions
 
-1. **What** are the environmental impacts of food production?
-2. **Where** are these emissions produced geographically?
-3. **Can we predict** emissions from production patterns alone?
-4. **Which countries and products** should be prioritized for mitigation?
 
 ---
 
-## 📁 Repository Structure
+## 📊 Key Results
+
+### Model Performance
+
+| Metric | Value | Interpretation |
+|--------|-------|----------------|
+| **R² (Test)** | 0.9993 | 99.93% variance explained |
+| **RMSE** | 108.68 Mt CO₂eq | Absolute error |
+| **MAPE** | **4.02%** | Average prediction error |
+| **Regional Bias** | < 1% | Consistent across all continents |
+
+### Top 5 Most Important Features
+
+| Feature | Importance | Interpretation |
+|---------|------------|----------------|
+| Log_Prod_Other | **93.37%** | Coffee, chocolate, wine dominate |
+| Prod_Seafood | 3.98% | Farmed fish and shrimp |
+| Log_Prod_Meat_High_Impact | 0.59% | Beef and lamb |
+| Log_Prod_Roots_&_Tubers | 0.58% | Potatoes, cassava |
+
+### Top 10 Emitting Countries
+
+| Rank | Country | Emissions (Mt CO₂eq) | Share |
+|------|---------|---------------------|-------|
+| 1 | **Brazil** | 19,440 | 16.4% |
+| 2 | **India** | 15,445 | 13.0% |
+| 3 | **China** | 10,219 | 8.6% |
+| 4 | **United States** | 6,070 | 5.1% |
+| 5 | **Indonesia** | 3,715 | 3.1% |
+
+### Regional Breakdown
+
+| Continent | Total Emissions | Mean per Country | Global Share |
+|-----------|----------------|------------------|--------------|
+| Asia | 39,349 Mt | 1,063 Mt | 43.1% |
+| South America | 22,561 Mt | **2,256 Mt** | 24.7% |
+| North America | 10,117 Mt | 632 Mt | 11.1% |
+
+---
+
+
+
+
+## 💡 Key Spatial Insights
+
+### Insight 1: Extreme Geographic Concentration
+
+```
+Top 1 Country (Brazil):     ████████████████ 16.4%
+Top 5 Countries:            ████████████████████████████████████████ 47.7%
+Top 10 Countries:           ██████████████████████████████████████████████████████ 63.0%
+Remaining 190+ Countries:   ████████████████████████████ 37.0%
+```
+
+### Insight 2: South America's Outlier Status
+
+| Metric | South America | Global Average | Ratio |
+|--------|---------------|----------------|-------|
+| Mean emissions/country | 2,256 Mt | 1,117 Mt | **2.02x** |
+
+### Insight 3: The "Other Products" Paradox
+
+Despite low production volume, "Other" category (Coffee, Chocolate, Wine) shows **93.4% feature importance** due to:
+
+- **Dark Chocolate:** 18.7 kg CO₂eq/kg (14.3 from land use change)
+- **Coffee:** 16.5 kg CO₂eq/kg
+- **Wine:** 1.4 kg CO₂eq/kg (64% from packaging + transport)
+
+### Insight 4: Temporal Trend
+
+- **Growth:** 3.6x increase (1961-2022)
+- **Peak:** 2022 (still increasing, no plateau)
+- **Policy implication:** Urgent intervention needed
+
+---
+
+
+
+## Future Improvements
+
+- Add trade-flow data
+- Add climate-zone spatial features
+- Disaggregate "Other" product categories
+- Add water scarcity modeling
+- Add land-use change estimation
+
+
+## 📧 Contact
+
+**Author:** Dariush Mohmmadzadeh
+- GitHub: [@yourusername](https://github.com/dariushmmz)
+
+---
+
+## ⭐ Star This Project
+
+If you found this analysis useful, please consider starring the repository!
