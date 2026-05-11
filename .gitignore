@@ -1,2 +1,10 @@
 data/
 *.csv
+
+# Dependencies
+node_modules/
+__pycache__/
+
+# IDE files
+.vscode/
+.idea/
