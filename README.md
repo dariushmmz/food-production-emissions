@@ -45,6 +45,7 @@ The analysis reveals that nearly half of global food-production emissions origin
 ### FAOSTAT
 - Global food production statistics
 - Years: 1961–2022
+  download link : https://www.kaggle.com/datasets/vijayveersingh/faostat-crops-and-livestock-data
 
 ### Environmental Footprint Dataset
 Includes:
@@ -52,20 +53,25 @@ Includes:
 - Water usage
 - Land use
 - Transport impacts
+  dowload link : https://www.kaggle.com/datasets/selfvivek/environment-impact-of-food-production
+  
+(download dataset and move them to "data/raw" directory)
+
+</br>
 
 ### Spatial Data
 - Country geometries
 - Continental boundaries
 - Geographic coordinates
 
-
+```
 graph LR
     A[FAOSTAT Production] --> C[Data Integration]
     B[Environmental Footprints] --> C
     C --> D[14,045 Country-Year Records]
     D --> E[Spatial Regression Model]
     E --> F[Predictions + Spatial Insights]
-
+```
     
 
 </br>
