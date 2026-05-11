@@ -4,6 +4,8 @@ data/
 # Dependencies
 node_modules/
 __pycache__/
+notebooks/__pycache__/
+
 
 # IDE files
 .vscode/
