@@ -129,28 +129,21 @@ Train/Test Split: 80/20 (11,236 / 2,809 rows)
 food-emissions-spatial-analysis/
 │
 ├── README.md                          # Main entry point (MOST IMPORTANT)
-├── LICENSE                            # MIT or Apache 2.0
 ├── requirements.txt                   # Python dependencies
 ├── .gitignore                         # Exclude data files
 │
 ├── data/                              # Data folder (add to .gitignore if large)
 │   ├── raw/                           # Original CSV files
 │   │   ├── Food_Production.csv
-│   │   └── FAOSTAT_production.csv
+│   │   └── data_20260501_205633.csv   # FAOSTAT_production dataset
 │   └── processed/                     # Cleaned data
-│       └── integrated_emissions.csv
+│       └── ...csv
 │
 ├── notebooks/                         # Jupyter notebooks
 │   ├── 01_data_integration.ipynb
 │   ├── 02_exploratory_analysis.ipynb
 │   ├── 03_spatial_analysis.ipynb
 │   └── 04_regression_modeling.ipynb
-│
-├── scripts/                           # Python scripts
-│   ├── data_preprocessing.py
-│   ├── feature_engineering.py
-│   ├── spatial_analysis.py
-│   └── regression_model.py
 │
 ├── outputs/                           # Generated files
 │   ├── figures/
@@ -159,19 +152,7 @@ food-emissions-spatial-analysis/
 │   │   ├── emissions_trend.png
 │   │   ├── feature_importance.png
 │   │   └── model_performance.png
-│   ├── tables/
-│   │   └── top_emitters.csv
-│   └── reports/
-│       └── SPATIAL_DATA_SCIENCE_PROJECT_REPORT.pdf
 │
-├── docs/                              # Documentation
-│   ├── methodology.md
-│   ├── data_dictionary.md
-│   └── spatial_insights.md
-│
-└── interactive/                       # Optional: Interactive dashboard
-    ├── app.py                         # Streamlit app
-    └── requirements_dashboard.txt
 ```
 
 ## Installation
