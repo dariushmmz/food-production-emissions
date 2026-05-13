@@ -270,7 +270,7 @@ Despite low production volume, "Other" category (Coffee, Chocolate, Wine) shows 
 ## Contact
 
 **Author:** Dariush Mohmmadzadeh
-- GitHub: [@yourusername](https://github.com/dariushmmz)
+- GitHub: (https://github.com/dariushmmz)
 
 
 ## ⭐ Star This Project
