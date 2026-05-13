@@ -164,22 +164,7 @@ cd global-food-emissions-spatial-analysis
 
 pip install -r requirements.txt
 ```
-
-
----
-
-# 14. How to Run
-
-```
-Run notebooks in order:
-
-1. Data Collection
-2. Cleaning
-3. EDA
-4. Spatial Analysis
-5. Modeling
-```
-
+Run notebooks in order.
 
 </br>
 
