@@ -169,7 +169,7 @@ Run notebooks in order.
 </br>
 
 ---
-## 📊 Key Results
+## Key Results
 
 ### Model Performance
 
@@ -212,7 +212,7 @@ Run notebooks in order.
 
 </br>
 
-## 💡 Key Spatial Insights
+## Key Spatial Insights
 
 ### Insight 1: Extreme Geographic Concentration
 
@@ -267,7 +267,7 @@ Despite low production volume, "Other" category (Coffee, Chocolate, Wine) shows 
 ---
 </br>
 
-## 📧 Contact
+## Contact
 
 **Author:** Dariush Mohmmadzadeh
 - GitHub: [@yourusername](https://github.com/dariushmmz)
