@@ -67,15 +67,6 @@ Includes:
 - Continental boundaries
 - Geographic coordinates
 
-```
-graph LR
-    A[FAOSTAT Production] --> C[Data Integration]
-    B[Environmental Footprints] --> C
-    C --> D[14,045 Country-Year Records]
-    D --> E[Spatial Regression Model]
-    E --> F[Predictions + Spatial Insights]
-
-```
     
 
 </br>
